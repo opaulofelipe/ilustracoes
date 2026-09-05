@@ -26,7 +26,9 @@ body {
   overflow-x: hidden;
   background: var(--paper);
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -70,7 +72,7 @@ a { color: inherit; }
   justify-content: space-between;
   gap: 1rem;
   padding-top: .3rem;
-  font-size: .74rem;
+  font-size: .8125rem;
   font-weight: 700;
   letter-spacing: .12em;
   text-transform: uppercase;
@@ -90,7 +92,7 @@ a { color: inherit; }
 
 .intro__eyebrow {
   margin: 0 0 1rem;
-  color: var(--grey-olive);
+  color: var(--stone-brown);
   font-size: .8rem;
   font-weight: 800;
   letter-spacing: .16em;
@@ -99,12 +101,12 @@ a { color: inherit; }
 
 .intro h1 {
   margin: 0;
-  max-width: 9ch;
-  font-family: Georgia, "Times New Roman", serif;
+  max-width: 100%;
+  font-family: "DM Serif Display", Georgia, serif;
   font-weight: 400;
-  font-size: clamp(3.5rem, 10vw, 9rem);
-  line-height: .88;
-  letter-spacing: -.055em;
+  font-size: clamp(3rem, 8vw, 8rem);
+  line-height: 1.08;
+  letter-spacing: -.035em;
 }
 
 .intro__aside {
@@ -195,7 +197,7 @@ a { color: inherit; }
   border-radius: 999px;
   background: rgba(32,32,48,.88);
   color: #fff;
-  font-size: .76rem;
+  font-size: .875rem;
   font-weight: 700;
   letter-spacing: .08em;
   text-decoration: none;
@@ -208,7 +210,7 @@ a { color: inherit; }
 
 .footer {
   min-height: 18rem;
-  padding: 2rem var(--gutter);
+  padding: 2rem var(--gutter) calc(6rem + env(safe-area-inset-bottom));
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -237,8 +239,8 @@ a { color: inherit; }
   }
 
   .intro h1 {
-    max-width: 8ch;
-    font-size: clamp(3.3rem, 18vw, 6.2rem);
+    max-width: 100%;
+    font-size: clamp(2.5rem, 12vw, 5.4rem);
   }
 
   .intro__aside {
@@ -268,4 +270,27 @@ a { color: inherit; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+}
+
+/* Comfortable touch targets and visible keyboard navigation. */
+.intro__aside a, .intro__bottom a, .footer a, .telegram {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+a:focus-visible {
+  outline: 3px solid #84724e;
+  outline-offset: 5px;
+}
+.intro__aside p { max-width: 60ch; }
+.intro__top, .intro__bottom, .footer { flex-wrap: wrap; }
+.intro__main > * { min-width: 0; }
+.work img {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+@media (max-width: 720px) {
+  .footer { align-items: flex-start; }
 }
