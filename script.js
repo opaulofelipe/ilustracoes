@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  document.querySelectorAll('.work img').forEach((image) => {
+  document.querySelectorAll('.work img, .intro__portrait').forEach((image) => {
     // Deterrents only: public image URLs and screenshots remain accessible.
     image.addEventListener('contextmenu', (event) => event.preventDefault());
     image.addEventListener('dragstart', (event) => event.preventDefault());
