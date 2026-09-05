@@ -3,103 +3,87 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#f4f1ea">
+  <meta name="theme-color" content="#F6F3EE">
   <meta name="description" content="Portfólio de ilustração de Paulo Felipe.">
   <title>Paulo Felipe — Ilustração</title>
-  <link rel="stylesheet" href="styles.css?v=3">
-  <script src="script.js?v=3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=5">
+  <script src="script.js?v=5" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#portfolio">Ir para os trabalhos</a>
 
+  <header class="intro" id="inicio">
+    <div class="intro__inner">
+      <div class="intro__top">
+        <span>Portfólio de ilustração</span>
+        <span>2026</span>
+      </div>
 
-  <section class="intro" id="inicio" aria-labelledby="intro-title">
-    <div class="intro__rule" aria-hidden="true"></div>
+      <div class="intro__main">
+        <div>
+          <p class="intro__eyebrow">Paulo Felipe</p>
+          <h1>Ilustrações<br>com histórias.</h1>
+        </div>
 
-    <div class="intro__topline">
-      <p>Portfólio de ilustração</p>
-      <p>Seleção de trabalhos</p>
+        <div class="intro__aside">
+          <p>
+            Formado em Ciência de Dados e Design Gráfico pela Alura e em UI Design pelo California Institute of Arts, via Coursera.
+          </p>
+          <a href="https://t.me/opaulofelipe" target="_blank" rel="noopener noreferrer">
+            @opaulofelipe <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="intro__bottom">
+        <a href="#obra-01">Ver trabalhos <span aria-hidden="true">↓</span></a>
+        <div class="palette" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
     </div>
+  </header>
 
-    <div class="intro__title-wrap">
-      <h1 id="intro-title">Paulo<br>Felipe</h1>
-      <p class="intro__discipline">Ilustração</p>
-    </div>
-
-    <div class="intro__bottom">
-      <p class="intro__bio">
-        Formado em Ciência de Dados e Design Gráfico pela Alura e em UI Design pelo California Institute of the Arts, via Coursera.
-      </p>
-
-      <a class="intro__link" href="https://t.me/opaulofelipe" target="_blank" rel="noopener noreferrer">
-        @opaulofelipe <span aria-hidden="true">↗</span>
-      </a>
-
-      <a class="intro__scroll" href="#obra-01">
-        Ver trabalhos <span aria-hidden="true">↓</span>
-      </a>
-    </div>
-
-    <div class="palette-strip" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span>
-    </div>
-  </section>
-
-  <main class="portfolio" id="portfolio">
-    <section class="work" id="obra-01" data-index="01" aria-label="Obra 1 de 10">
-      <img src="01.PNG" alt="Ilustração de Paulo Felipe, obra 01" class="work__image" loading="eager" fetchpriority="high" decoding="async">
-    </section>
-
-    <section class="work" id="obra-02" data-index="02" aria-label="Obra 2 de 10">
-      <img src="02.PNG" alt="Ilustração de Paulo Felipe, obra 02" class="work__image" loading="lazy" decoding="async">
-    </section>
-
-    <section class="work" id="obra-03" data-index="03" aria-label="Obra 3 de 10">
-      <img src="03.PNG" alt="Ilustração de Paulo Felipe, obra 03" class="work__image" loading="lazy" decoding="async">
-    </section>
-
-    <section class="work" id="obra-04" data-index="04" aria-label="Obra 4 de 10">
-      <img src="04.PNG" alt="Ilustração de Paulo Felipe, obra 04" class="work__image" loading="lazy" decoding="async">
-    </section>
-
-    <section class="work" id="obra-05" data-index="05" aria-label="Obra 5 de 10">
-      <img src="05.PNG" alt="Ilustração de Paulo Felipe, obra 05" class="work__image" loading="lazy" decoding="async">
-    </section>
-
-    <section class="work" id="obra-06" data-index="06" aria-label="Obra 6 de 10">
-      <img src="06.PNG" alt="Ilustração de Paulo Felipe, obra 06" class="work__image" loading="lazy" decoding="async">
-    </section>
-
-    <section class="work" id="obra-07" data-index="07" aria-label="Obra 7 de 10">
-      <img src="07.PNG" alt="Ilustração de Paulo Felipe, obra 07" class="work__image" loading="lazy" decoding="async">
-    </section>
-
-    <section class="work" id="obra-08" data-index="08" aria-label="Obra 8 de 10">
-      <img src="08.PNG" alt="Ilustração de Paulo Felipe, obra 08" class="work__image" loading="lazy" decoding="async">
-    </section>
-
-    <section class="work" id="obra-09" data-index="09" aria-label="Obra 9 de 10">
-      <img src="09.PNG" alt="Ilustração de Paulo Felipe, obra 09" class="work__image" loading="lazy" decoding="async">
-    </section>
-
-    <section class="work" id="obra-10" data-index="10" aria-label="Obra 10 de 10">
-      <img src="10.PNG" alt="Ilustração de Paulo Felipe, obra 10" class="work__image" loading="lazy" decoding="async">
-    </section>
+  <main class="portfolio" id="portfolio" aria-label="Seleção de ilustrações">
+    <figure class="work" id="obra-01">
+      <img src="01.PNG" alt="Ilustração de Paulo Felipe, obra 01" loading="eager" fetchpriority="high" decoding="async">
+    </figure>
+    <figure class="work" id="obra-02">
+      <img src="02.PNG" alt="Ilustração de Paulo Felipe, obra 02" loading="lazy" decoding="async">
+    </figure>
+    <figure class="work" id="obra-03">
+      <img src="03.PNG" alt="Ilustração de Paulo Felipe, obra 03" loading="lazy" decoding="async">
+    </figure>
+    <figure class="work" id="obra-04">
+      <img src="04.PNG" alt="Ilustração de Paulo Felipe, obra 04" loading="lazy" decoding="async">
+    </figure>
+    <figure class="work" id="obra-05">
+      <img src="05.PNG" alt="Ilustração de Paulo Felipe, obra 05" loading="lazy" decoding="async">
+    </figure>
+    <figure class="work" id="obra-06">
+      <img src="06.PNG" alt="Ilustração de Paulo Felipe, obra 06" loading="lazy" decoding="async">
+    </figure>
+    <figure class="work" id="obra-07">
+      <img src="07.PNG" alt="Ilustração de Paulo Felipe, obra 07" loading="lazy" decoding="async">
+    </figure>
+    <figure class="work" id="obra-08">
+      <img src="08.PNG" alt="Ilustração de Paulo Felipe, obra 08" loading="lazy" decoding="async">
+    </figure>
+    <figure class="work" id="obra-09">
+      <img src="09.PNG" alt="Ilustração de Paulo Felipe, obra 09" loading="lazy" decoding="async">
+    </figure>
+    <figure class="work" id="obra-10">
+      <img src="10.PNG" alt="Ilustração de Paulo Felipe, obra 10" loading="lazy" decoding="async">
+    </figure>
   </main>
 
-  <a class="telegram-floating" href="https://t.me/opaulofelipe" target="_blank" rel="noopener noreferrer" aria-label="Falar com Paulo Felipe no Telegram">
+  <a class="telegram" href="https://t.me/opaulofelipe" target="_blank" rel="noopener noreferrer" aria-label="Falar com Paulo Felipe no Telegram">
     Telegram <span aria-hidden="true">↗</span>
   </a>
 
   <footer class="footer">
-    <p>Paulo Felipe · Ilustração</p>
-    <a href="https://t.me/opaulofelipe" target="_blank" rel="noopener noreferrer">@opaulofelipe ↗</a>
+    <span>Paulo Felipe · Ilustração</span>
+    <a href="#inicio">Voltar ao topo ↑</a>
   </footer>
-
-  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-fill"></span></div>
-
-  <noscript>
-    <p class="noscript-message">O portfólio continua funcionando sem JavaScript; apenas o contador, o enquadramento adaptativo e a cor automática de fundo deixam de ser ajustados.</p>
-  </noscript>
 </body>
 </html>
