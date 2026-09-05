@@ -3,139 +3,103 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#202030">
+  <meta name="theme-color" content="#f4f1ea">
   <meta name="description" content="Portfólio de ilustração de Paulo Felipe.">
-  <title>Paulo Felipe — Portfólio de Ilustração</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <title>Paulo Felipe — Ilustração</title>
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script src="script.js?v=3" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#portfolio">Ir para o portfólio</a>
+  <a class="skip-link" href="#portfolio">Ir para os trabalhos</a>
 
-  <div class="site-chrome" aria-hidden="true">
-    <span class="site-chrome__corner site-chrome__corner--tl"></span>
-    <span class="site-chrome__corner site-chrome__corner--tr"></span>
-    <span class="site-chrome__corner site-chrome__corner--bl"></span>
-    <span class="site-chrome__corner site-chrome__corner--br"></span>
-  </div>
 
-  <header class="topbar" aria-label="Cabeçalho do portfólio">
-    <a class="brand" href="#obra-01">
-      <span class="brand__kicker">Portfólio</span>
-      <span class="brand__name">Paulo Felipe</span>
-    </a>
+  <section class="intro" id="inicio" aria-labelledby="intro-title">
+    <div class="intro__rule" aria-hidden="true"></div>
 
-    <div class="topbar__meta">
-      <p class="counter" aria-live="polite"><span id="current-slide">01</span><span aria-hidden="true"> / </span>10</p>
-      <a class="topbar__telegram" href="https://t.me/opaulofelipe" target="_blank" rel="noopener noreferrer">Telegram</a>
+    <div class="intro__topline">
+      <p>Portfólio de ilustração</p>
+      <p>Seleção de trabalhos</p>
     </div>
-  </header>
 
-  <aside class="side-note" aria-label="Informações do autor">
-    <p class="side-note__label">Ilustração · Seleção</p>
-    <p class="side-note__bio">
-      Formação em Ciência de Dados e Design Gráfico pela Alura e em UI Design pelo California Institute of the Arts, via Coursera.
-    </p>
-  </aside>
+    <div class="intro__title-wrap">
+      <h1 id="intro-title">Paulo<br>Felipe</h1>
+      <p class="intro__discipline">Ilustração</p>
+    </div>
 
-  <div class="progress-track" aria-hidden="true">
-    <span class="progress-fill" id="progress-fill"></span>
-  </div>
+    <div class="intro__bottom">
+      <p class="intro__bio">
+        Formado em Ciência de Dados e Design Gráfico pela Alura e em UI Design pelo California Institute of the Arts, via Coursera.
+      </p>
 
-  <main id="portfolio" class="portfolio">
-    <section class="panel panel--intro" id="obra-01" data-index="01" aria-label="Obra 1 de 10">
-      <img
-        src="01.PNG"
-        alt="Ilustração de Paulo Felipe, obra 01"
-        class="panel__image"
-        loading="eager"
-        fetchpriority="high"
-        decoding="async"
-      >
-      <div class="panel__veil"></div>
-      <div class="panel__content hero-card">
-        <p class="hero-card__eyebrow">Portfólio de ilustração</p>
-        <h1 class="hero-card__title">
-          Paulo<br>
-          Felipe
-        </h1>
-        <div class="hero-card__body">
-          <p>
-            Designer e ilustrador com formação em Ciência de Dados e Design Gráfico pela Alura e em UI Design pelo California Institute of the Arts, via Coursera.
-          </p>
-          <a class="hero-card__cta" href="https://t.me/opaulofelipe" target="_blank" rel="noopener noreferrer">
-            Conversar no Telegram
-            <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-      </div>
-      <div class="panel__meta" aria-hidden="true">
-        <span>01</span>
-        <span>Introdução</span>
-      </div>
+      <a class="intro__link" href="https://t.me/opaulofelipe" target="_blank" rel="noopener noreferrer">
+        @opaulofelipe <span aria-hidden="true">↗</span>
+      </a>
+
+      <a class="intro__scroll" href="#obra-01">
+        Ver trabalhos <span aria-hidden="true">↓</span>
+      </a>
+    </div>
+
+    <div class="palette-strip" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </section>
+
+  <main class="portfolio" id="portfolio">
+    <section class="work" id="obra-01" data-index="01" aria-label="Obra 1 de 10">
+      <img src="01.PNG" alt="Ilustração de Paulo Felipe, obra 01" class="work__image" loading="eager" fetchpriority="high" decoding="async">
     </section>
 
-    <section class="panel" id="obra-02" data-index="02" aria-label="Obra 2 de 10">
-      <img src="02.PNG" alt="Ilustração de Paulo Felipe, obra 02" class="panel__image" loading="lazy" decoding="async">
-      <div class="panel__meta" aria-hidden="true"><span>02</span><span>Ilustração</span></div>
+    <section class="work" id="obra-02" data-index="02" aria-label="Obra 2 de 10">
+      <img src="02.PNG" alt="Ilustração de Paulo Felipe, obra 02" class="work__image" loading="lazy" decoding="async">
     </section>
 
-    <section class="panel" id="obra-03" data-index="03" aria-label="Obra 3 de 10">
-      <img src="03.PNG" alt="Ilustração de Paulo Felipe, obra 03" class="panel__image" loading="lazy" decoding="async">
-      <div class="panel__meta" aria-hidden="true"><span>03</span><span>Ilustração</span></div>
+    <section class="work" id="obra-03" data-index="03" aria-label="Obra 3 de 10">
+      <img src="03.PNG" alt="Ilustração de Paulo Felipe, obra 03" class="work__image" loading="lazy" decoding="async">
     </section>
 
-    <section class="panel" id="obra-04" data-index="04" aria-label="Obra 4 de 10">
-      <img src="04.PNG" alt="Ilustração de Paulo Felipe, obra 04" class="panel__image" loading="lazy" decoding="async">
-      <div class="panel__meta" aria-hidden="true"><span>04</span><span>Ilustração</span></div>
+    <section class="work" id="obra-04" data-index="04" aria-label="Obra 4 de 10">
+      <img src="04.PNG" alt="Ilustração de Paulo Felipe, obra 04" class="work__image" loading="lazy" decoding="async">
     </section>
 
-    <section class="panel" id="obra-05" data-index="05" aria-label="Obra 5 de 10">
-      <img src="05.PNG" alt="Ilustração de Paulo Felipe, obra 05" class="panel__image" loading="lazy" decoding="async">
-      <div class="panel__meta" aria-hidden="true"><span>05</span><span>Ilustração</span></div>
+    <section class="work" id="obra-05" data-index="05" aria-label="Obra 5 de 10">
+      <img src="05.PNG" alt="Ilustração de Paulo Felipe, obra 05" class="work__image" loading="lazy" decoding="async">
     </section>
 
-    <section class="panel" id="obra-06" data-index="06" aria-label="Obra 6 de 10">
-      <img src="06.PNG" alt="Ilustração de Paulo Felipe, obra 06" class="panel__image" loading="lazy" decoding="async">
-      <div class="panel__meta" aria-hidden="true"><span>06</span><span>Ilustração</span></div>
+    <section class="work" id="obra-06" data-index="06" aria-label="Obra 6 de 10">
+      <img src="06.PNG" alt="Ilustração de Paulo Felipe, obra 06" class="work__image" loading="lazy" decoding="async">
     </section>
 
-    <section class="panel" id="obra-07" data-index="07" aria-label="Obra 7 de 10">
-      <img src="07.PNG" alt="Ilustração de Paulo Felipe, obra 07" class="panel__image" loading="lazy" decoding="async">
-      <div class="panel__meta" aria-hidden="true"><span>07</span><span>Ilustração</span></div>
+    <section class="work" id="obra-07" data-index="07" aria-label="Obra 7 de 10">
+      <img src="07.PNG" alt="Ilustração de Paulo Felipe, obra 07" class="work__image" loading="lazy" decoding="async">
     </section>
 
-    <section class="panel" id="obra-08" data-index="08" aria-label="Obra 8 de 10">
-      <img src="08.PNG" alt="Ilustração de Paulo Felipe, obra 08" class="panel__image" loading="lazy" decoding="async">
-      <div class="panel__meta" aria-hidden="true"><span>08</span><span>Ilustração</span></div>
+    <section class="work" id="obra-08" data-index="08" aria-label="Obra 8 de 10">
+      <img src="08.PNG" alt="Ilustração de Paulo Felipe, obra 08" class="work__image" loading="lazy" decoding="async">
     </section>
 
-    <section class="panel" id="obra-09" data-index="09" aria-label="Obra 9 de 10">
-      <img src="09.PNG" alt="Ilustração de Paulo Felipe, obra 09" class="panel__image" loading="lazy" decoding="async">
-      <div class="panel__meta" aria-hidden="true"><span>09</span><span>Ilustração</span></div>
+    <section class="work" id="obra-09" data-index="09" aria-label="Obra 9 de 10">
+      <img src="09.PNG" alt="Ilustração de Paulo Felipe, obra 09" class="work__image" loading="lazy" decoding="async">
     </section>
 
-    <section class="panel" id="obra-10" data-index="10" aria-label="Obra 10 de 10">
-      <img src="10.PNG" alt="Ilustração de Paulo Felipe, obra 10" class="panel__image" loading="lazy" decoding="async">
-      <div class="panel__meta" aria-hidden="true"><span>10</span><span>Ilustração</span></div>
+    <section class="work" id="obra-10" data-index="10" aria-label="Obra 10 de 10">
+      <img src="10.PNG" alt="Ilustração de Paulo Felipe, obra 10" class="work__image" loading="lazy" decoding="async">
     </section>
   </main>
 
-  <a
-    class="telegram-pill"
-    href="https://t.me/opaulofelipe"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Abrir conversa com @opaulofelipe no Telegram"
-  >
-    <span>@opaulofelipe</span>
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-      <path d="M20.665 3.717 2.934 10.556c-1.21.486-1.203 1.16-.222 1.461l4.552 1.421 10.532-6.646c.498-.303.953-.14.579.192l-8.533 7.701-.314 4.496c.46 0 .663-.21.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.786l3.019-14.227c.31-1.241-.473-1.803-1.281-1.238Z"></path>
-    </svg>
+  <a class="telegram-floating" href="https://t.me/opaulofelipe" target="_blank" rel="noopener noreferrer" aria-label="Falar com Paulo Felipe no Telegram">
+    Telegram <span aria-hidden="true">↗</span>
   </a>
 
+  <footer class="footer">
+    <p>Paulo Felipe · Ilustração</p>
+    <a href="https://t.me/opaulofelipe" target="_blank" rel="noopener noreferrer">@opaulofelipe ↗</a>
+  </footer>
+
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-fill"></span></div>
+
   <noscript>
-    <p class="noscript-message">O site funciona sem JavaScript; apenas o contador e a barra de progresso não serão atualizados durante a rolagem.</p>
+    <p class="noscript-message">O portfólio continua funcionando sem JavaScript; apenas o contador, o enquadramento adaptativo e a cor automática de fundo deixam de ser ajustados.</p>
   </noscript>
 </body>
 </html>
